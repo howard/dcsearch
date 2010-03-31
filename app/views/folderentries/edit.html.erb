@@ -1,0 +1,28 @@
+<h1>Editing folderentry</h1>
+
+<% form_for(@folderentry) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :parentId %><br />
+    <%= f.text_field :parentId %>
+  </p>
+  <p>
+    <%= f.label :shortName %><br />
+    <%= f.text_field :shortName %>
+  </p>
+  <p>
+    <%= f.label :fullName %><br />
+    <%= f.text_field :fullName %>
+  </p>
+  <p>
+    <%= f.label :userId %><br />
+    <%= f.text_field :userId %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @folderentry %> |
+<%= link_to 'Back', folderentries_path %>

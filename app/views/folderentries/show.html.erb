@@ -1,0 +1,23 @@
+<p>
+  <b>Parentid:</b>
+  <%=h @folderentry.parentId %>
+</p>
+
+<p>
+  <b>Shortname:</b>
+  <%=h @folderentry.shortName %>
+</p>
+
+<p>
+  <b>Fullname:</b>
+  <%=h @folderentry.fullName %>
+</p>
+
+<p>
+  <b>Userid:</b>
+  <%=h @folderentry.userId %>
+</p>
+
+
+<%= link_to 'Edit', edit_folderentry_path(@folderentry) %> |
+<%= link_to 'Back', folderentries_path %>

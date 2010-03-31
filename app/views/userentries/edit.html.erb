@@ -1,0 +1,28 @@
+<h1>Editing userentry</h1>
+
+<% form_for(@userentry) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :cid %><br />
+    <%= f.text_field :cid %>
+  </p>
+  <p>
+    <%= f.label :lastScan %><br />
+    <%= f.datetime_select :lastScan %>
+  </p>
+  <p>
+    <%= f.label :hub %><br />
+    <%= f.text_field :hub %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @userentry %> |
+<%= link_to 'Back', userentries_path %>

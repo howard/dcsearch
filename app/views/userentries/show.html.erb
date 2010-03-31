@@ -1,0 +1,23 @@
+<p>
+  <b>Cid:</b>
+  <%=h @userentry.cid %>
+</p>
+
+<p>
+  <b>Lastscan:</b>
+  <%=h @userentry.lastScan %>
+</p>
+
+<p>
+  <b>Hub:</b>
+  <%=h @userentry.hub %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @userentry.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_userentry_path(@userentry) %> |
+<%= link_to 'Back', userentries_path %>

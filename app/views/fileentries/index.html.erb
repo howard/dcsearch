@@ -1,0 +1,28 @@
+<h1>Listing fileentries</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Hash</th>
+    <th>Folderid</th>
+    <th>Userid</th>
+    <th>Filesize</th>
+  </tr>
+
+<% for fileentry in @fileentries %>
+  <tr>
+    <td><%=h fileentry.name %></td>
+    <td><%=h fileentry.hash %></td>
+    <td><%=h fileentry.folderId %></td>
+    <td><%=h fileentry.userId %></td>
+    <td><%=h fileentry.fileSize %></td>
+    <td><%= link_to 'Show', fileentry %></td>
+    <td><%= link_to 'Edit', edit_fileentry_path(fileentry) %></td>
+    <td><%= link_to 'Destroy', fileentry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New fileentry', new_fileentry_path %>
