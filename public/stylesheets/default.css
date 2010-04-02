@@ -25,6 +25,8 @@ a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #000;}
 
+img {display: inline-block;}
+
 /* BEGIN for scaffold */
 
 .fieldWithErrors {

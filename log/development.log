@@ -26503,3 +26503,481 @@ Rendering userentries/browse
 Rendered layouts/_header (0.7ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 193ms (View: 5, DB: 172) | 200 OK [http://localhost/browse/15/Testuser/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 01:33:26) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 01:36:28) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:36:30) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (48.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (25.8ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mFileentry Load (0.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mUserentry Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.4ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (20.3ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 308ms (View: 120, DB: 77) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:37:08) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mFileentry Load (0.4ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mUserentry Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.2ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (18.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 38ms (View: 20, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:37:51) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mFileentry Load (0.4ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mUserentry Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.3ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (18.9ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 52ms (View: 21, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:39:18) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mFileentry Load (0.4ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mUserentry Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.5ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (20.6ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 139ms (View: 26, DB: 5) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:39:32) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mFileentry Load (0.4ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mUserentry Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.2ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (18.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 39ms (View: 23, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:39:47) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mFileentry Load (0.4ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+ERROR: compiling _run_erb_app47views47search47_results46html46erb_locals_object_results RAISED compile error
+/Users/mrc/Development/dcsearch/app/views/search/_results.html.erb:17: syntax error, unexpected kENSURE, expecting kEND
+/Users/mrc/Development/dcsearch/app/views/search/_results.html.erb:19: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47search47_results46html46erb_locals_object_results(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];results = local_assigns[:results];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<ul class=\"results\">\n  "
+;  for item in @file_results do ; @output_buffer.concat "\n    <li class=\"result\">\n      "
+
+; @output_buffer.concat(( magnet item, image_tag('download.png') ).to_s); @output_buffer.concat "\n      /path/will/be/here/"
+; @output_buffer.concat(( item.name ).to_s); @output_buffer.concat "<br />\n      "
+;  user = Userentry.find(item.userId) ; @output_buffer.concat "\n      User:\n      "
+
+;  if user.online ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( image_tag 'online.png' ).to_s); @output_buffer.concat "<a href=\"/browse/"; @output_buffer.concat(( user.id.to_s + '/' + user.name + '">' + user.name ).to_s); @output_buffer.concat "</a>\n      "
+;  else ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( image_tag 'offline.png' ).to_s); @output_buffer.concat "<a href=\"/browse/"; @output_buffer.concat(( user.id.to_s + '/' + user.name + '">' + user.name ).to_s); @output_buffer.concat "</a>\n      Hub: "
+; @output_buffer.concat(( user.hub ).to_s); @output_buffer.concat "\n      Filesize: "
+; @output_buffer.concat(( human_filesize item.fileSize ).to_s); @output_buffer.concat "\n    </li>\n  "
+
+;  end ; @output_buffer.concat "\n</ul>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/mrc/Development/dcsearch/app/views/search/_results.html.erb:19:in `compile!'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/Users/mrc/Development/dcsearch/app/views/search/results.html.erb:1:in `_run_erb_app47views47search47results46html46erb'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/mrc/Development/dcsearch/app/views/search/_results.html.erb:17: syntax error, unexpected kENSURE, expecting kEND
+/Users/mrc/Development/dcsearch/app/views/search/_results.html.erb:19: syntax error, unexpected $end, expecting kEND) on line #17 of app/views/search/_results.html.erb:
+14:     </li>
+15:   <% end %>
+16: </ul>
+
+    app/views/search/_results.html.erb:19:in `compile!'
+    app/views/search/results.html.erb:1
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:40:21) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFileentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mFileentry Load (0.4ms)[0m   [0mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mUserentry Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (19.2ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 40ms (View: 24, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:40:56) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFileentry Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mFileentry Load (0.5ms)[0m   [0mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mUserentry Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (18.3ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 171ms (View: 121, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:41:05) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFileentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mFileentry Load (0.4ms)[0m   [0mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mUserentry Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.5ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (18.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 38ms (View: 20, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 193.170.96.92 at 2010-04-03 01:41:47) [POST]
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:42:39) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFileentry Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mFileentry Load (0.4ms)[0m   [0mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+Rendered search/_slim (2.9ms)
+  [4;36;1mUserentry Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (18.9ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 306ms (View: 290, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:42:56) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFileentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mFileentry Load (0.4ms)[0m   [0mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+Rendered search/_slim (3.2ms)
+  [4;36;1mUserentry Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.6ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (20.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 72ms (View: 56, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:45:08) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFileentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mFileentry Load (0.6ms)[0m   [0mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+Rendered search/_slim (3.0ms)
+  [4;36;1mUserentry Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.4ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (120.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 164ms (View: 147, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
