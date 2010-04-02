@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100402160943) do
+ActiveRecord::Schema.define(:version => 20100402192456) do
 
   create_table "fileentries", :force => true do |t|
     t.string  "name"
@@ -27,10 +27,11 @@ ActiveRecord::Schema.define(:version => 20100402160943) do
   end
 
   create_table "userentries", :force => true do |t|
-    t.string "cid"
-    t.time   "lastScan"
-    t.string "hub"
-    t.string "name"
+    t.string  "cid"
+    t.time    "lastScan"
+    t.string  "hub"
+    t.string  "name"
+    t.boolean "online"
   end
 
 end

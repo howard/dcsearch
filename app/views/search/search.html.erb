@@ -1,13 +1,13 @@
 <div id="search_form">
-  <% form_remote_tag :html => {:controller => 'search', :action => 'results'}, :update => 'results', :url => {:action => 'results'}, :complete => visual_effect(:fade, 'results', :duration => 0.2, :from => 0, :to => 1) do %>
-  	<%= text_field :query, :term, :size => 50 %>
+  <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
+  	<%= q.text_field :term, :size => 50 %>
   	<%= submit_tag "Search..." %><br />
-  	<%= check_box :query, "sposts", :checked => true %>
-  	  <%= label :query, :files?, "Files" %>
-  	<%= check_box :query, "susers", :checked => false, :disabled => true %>
-  	  <%= label :query, :folders?, "Folders" %>
-  	<%= check_box :query, "spastes", :checked => false, :disabled => true %>
-  	  <%= label :query, :users?, "Users" %>
+  	<%= q.check_box :files?, :checked => true %>
+  	  <%= q.label :files?, "Files" %>
+  	<%= q.check_box :folders?, :checked => false, :disabled => true %>
+  	  <%= q.label :folders?, "Folders" %>
+  	<%= q.check_box :users?, :checked => false, :disabled => true %>
+  	  <%= q.label :users?, "Users" %>
   <% end %>
 </div>
 
