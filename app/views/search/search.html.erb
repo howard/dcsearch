@@ -1,3 +1,7 @@
+<div class="logo">
+  <img src="/images/logo.jpg" alt="logo" />
+</div>
+
 <div id="search_form">
   <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
   	<%= q.text_field :term, :size => 50 %>
@@ -9,7 +13,4 @@
   	<%= q.check_box :users?, :checked => false, :disabled => true %>
   	  <%= q.label :users?, "Users" %>
   <% end %>
-</div>
-
-<div id="results">
 </div>
