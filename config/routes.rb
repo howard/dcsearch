@@ -5,7 +5,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect 'help/:action', :controller => 'help'
   
-  map.connect 'browse/:user/:path', :controller => 'userentries', :action => 'browse'
+  map.connect 'browse/:id/:user/:path', :controller => 'userentries', :action => 'browse'
+  map.connect 'browse/:id/:user', :controller => 'userentries', :action => 'browse'
   
   map.resources :fileentries
 

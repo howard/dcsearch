@@ -86,8 +86,11 @@ class UserentriesController < ApplicationController
   
   def browse
     # File browser for a user's files
-    @path = '/' + params['path']
-    @folder = Folderentry.all(:conditions => {:fullName => @path, :parentId => 0, :userId => Userentry.find_by_name(params['user'])})[0]
+    @path = '/'
+    if params['path'] != nil
+      @path += params['path']
+    end
+    @folder = Folderentry.all(:conditions => {:fullName => @path, :userId => params['id'].to_i})[0]
     @sub_folders = Folderentry.all(:conditions => {:parentId => @folder})
     @files = Fileentry.all(:conditions => {:folderId => @folder})
   end

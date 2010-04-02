@@ -4,7 +4,7 @@
       <%= magnet item, image_tag('download.png') %>
       /path/will/be/here/<%= item.name %><br />
       <% user = Userentry.find(item.userId) %>
-      User: <%= user.name %>
+      User: <a href="/browse/<%= user.id.to_s + '/' + user.name + '">' + user.name %></a>
       Hub: <%= user.hub %>
       Filesize: <%= human_filesize item.fileSize %>
     </li>

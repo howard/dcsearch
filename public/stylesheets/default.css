@@ -123,3 +123,19 @@ a:hover { color: #000;}
 .result {
   margin-bottom: 20px;
 }
+
+#browser {
+  border: #C2C2C2 solid 1px;
+  padding: 0px;
+}
+#path {
+  margin: 0px;
+  padding: 3px;
+  border-bottom: #C2C2C2 solid 1px;
+}
+#listing {
+  list-style: none;
+  display: block;
+  padding: 5px;
+  margin: 0px;
+}
