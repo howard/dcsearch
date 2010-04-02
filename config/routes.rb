@@ -7,12 +7,6 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect 'browse/:id/:user/:path', :controller => 'userentries', :action => 'browse'
   map.connect 'browse/:id/:user', :controller => 'userentries', :action => 'browse'
-  
-  map.resources :fileentries
-
-  map.resources :folderentries
-
-  map.resources :userentries
 
   # The priority is based upon order of creation: first created -> highest priority.
 

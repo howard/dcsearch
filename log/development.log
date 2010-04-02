@@ -26981,3 +26981,176 @@ Rendered search/_results (120.8ms)
 Rendered layouts/_header (0.7ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 164ms (View: 147, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:49:06) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mSQL (3.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFileentry Columns (27.4ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mFileentry Load (0.4ms)[0m   [0mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+Rendered search/_slim (3.2ms)
+  [4;36;1mUserentry Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (18.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 175ms (View: 42, DB: 33) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 01:49:08) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 01:50:52) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:50:55) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mSQL (21.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFileentry Columns (27.2ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mFileentry Load (0.4ms)[0m   [0mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+Rendered search/_slim (2.3ms)
+  [4;36;1mUserentry Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.5ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (119.4ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 251ms (View: 123, DB: 51) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 01:50:56) [GET]
+  Parameters: {"id"=>"15", "user"=>"Testuser"}
+  [4;35;1mFolderentry Load (14.9ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`fullName` = '/' AND `folderentries`.`userId` = 15) [0m
+  [4;36;1mFolderentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `folderentries`[0m
+  [4;35;1mFolderentry Load (10.5ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`parentId` = 47606) [0m
+  [4;36;1mFileentry Load (237.8ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`folderId` = 47606) [0m
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 291ms (View: 9, DB: 265) | 200 OK [http://localhost/browse/15/Testuser]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 01:50:58) [GET]
+  Parameters: {"id"=>"15", "path"=>"Serien", "user"=>"Testuser"}
+  [4;35;1mFolderentry Load (14.7ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`fullName` = '/Serien' AND `folderentries`.`userId` = 15) [0m
+  [4;36;1mFolderentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `folderentries`[0m
+  [4;35;1mFolderentry Load (9.8ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`parentId` = 47616) [0m
+  [4;36;1mFileentry Load (142.8ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`folderId` = 47616) [0m
+Rendering template within layouts/default
+Rendering userentries/browse
+  [4;35;1mFolderentry Load (1.1ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`id` = 47606) [0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 191ms (View: 6, DB: 171) | 200 OK [http://localhost/browse/15/Testuser/Serien]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 01:52:57) [GET]
+  Parameters: {"id"=>"15", "path"=>"Serien", "user"=>"Testuser"}
+  [4;36;1mFolderentry Load (13.7ms)[0m   [0;1mSELECT * FROM `folderentries` WHERE (`folderentries`.`fullName` = '/Serien' AND `folderentries`.`userId` = 15) [0m
+  [4;35;1mFolderentry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `folderentries`[0m
+  [4;36;1mFolderentry Load (10.0ms)[0m   [0;1mSELECT * FROM `folderentries` WHERE (`folderentries`.`parentId` = 47616) [0m
+  [4;35;1mFileentry Load (151.4ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`folderId` = 47616) [0m
+Rendering template within layouts/default
+Rendering userentries/browse
+  [4;36;1mFolderentry Load (0.5ms)[0m   [0;1mSELECT * FROM `folderentries` WHERE (`folderentries`.`id` = 47606) [0m
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 199ms (View: 7, DB: 177) | 200 OK [http://localhost/browse/15/Testuser/Serien]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 01:52:58) [GET]
+  Parameters: {"id"=>"15", "user"=>"Testuser"}
+  [4;35;1mFolderentry Load (15.1ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`fullName` = '/' AND `folderentries`.`userId` = 15) [0m
+  [4;36;1mFolderentry Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `folderentries`[0m
+  [4;35;1mFolderentry Load (9.8ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`parentId` = 47606) [0m
+  [4;36;1mFileentry Load (141.4ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`folderId` = 47606) [0m
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 285ms (View: 101, DB: 168) | 200 OK [http://localhost/browse/15/Testuser/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 01:53:00) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 01:53:02) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mFileentry Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mFileentry Load (0.6ms)[0m   [0mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+Rendered search/_slim (2.1ms)
+  [4;36;1mUserentry Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.4ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (20.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 41ms (View: 24, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
