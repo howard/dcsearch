@@ -23167,3 +23167,218 @@ Rendered search/_results (70.4ms)
 Rendered layouts/_header (0.1ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 228ms (View: 70, DB: 153) | 200 OK [http://localhost/results?query%5Bterm%5D=yafoot.tpm&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:40:18) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-02 22:40:22) [GET]
+
+ActionController::RoutingError (No route matches "/stats" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-02 22:40:26) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;36;1mFileentry Load (357.6ms)[0m   [0;1mSELECT * FROM `fileentries` [0m
+  [4;35;1mFolderentry Columns (34.7ms)[0m   [0mSHOW FIELDS FROM `folderentries`[0m
+  [4;36;1mFolderentry Load (479.8ms)[0m   [0;1mSELECT * FROM `folderentries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFileentry Columns (39.4ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (14.8ms)
+Completed in 22057ms (View: 21144, DB: 912) | 200 OK [http://localhost/help/stats]
+  [4;35;1mSQL (17.6ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-02 22:46:48) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;35;1mFileentry Load (819.2ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFolderentry Load (99.5ms)[0m   [0;1mSELECT * FROM `folderentries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFileentry Columns (39.9ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+Rendered layouts/_header (45.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12588ms (View: 11627, DB: 976) | 200 OK [http://localhost/help/stats]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:47:00) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:47:26) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:47:47) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 106ms (View: 104, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:48:13) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:48:28) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:48:34) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#usage (for 127.0.0.1 at 2010-04-02 22:48:42) [GET]
+Rendering template within layouts/default
+Rendering help/usage
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 37ms (View: 36, DB: 0) | 200 OK [http://localhost/help/usage]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#about (for 127.0.0.1 at 2010-04-02 22:48:43) [GET]
+Rendering template within layouts/default
+Rendering help/about
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/help/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:48:44) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:49:23) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:49:24) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:50:41) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:50:58) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 22:51:09) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 22:51:14) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"yafoot.tpm", "users"=>"0", "folders"=>"0"}}
+  [4;35;1mFileentry Load (434.9ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'yafoot.tpm') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mFileentry Columns (24.5ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mUserentry Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.4ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (47.6ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 545ms (View: 24, DB: 461) | 200 OK [http://localhost/results?query%5Bterm%5D=yafoot.tpm&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]

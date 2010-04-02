@@ -92,9 +92,13 @@ a:hover { color: #fff; background-color:#000; }
   font-size:   30px;
   line-height: 40px;
 }
-#header a a:hover a:visited {
-  color: #000000;
-  text-decoration: none;
+
+#navigation {
+  float: right;
+  margin: 10px;
+  padding: 0px 10px 2px 10px;
+  border: #636363 solid 1px;
+  background-color: #C2C2C2;
 }
 
 #content {
