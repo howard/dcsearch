@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.root :controller => 'search', :action => 'search'
+  
   map.resources :fileentries
 
   map.resources :folderentries
