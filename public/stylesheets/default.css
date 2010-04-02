@@ -1,4 +1,9 @@
-body { background-color: #fff; color: #333; }
+body {
+  background-color: #fff;
+  color: #333;
+  margin-left: 100px;
+  margin-right: 100px;
+}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -15,6 +20,8 @@ pre {
 a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
+
+/* BEGIN for scaffold */
 
 .fieldWithErrors {
   padding: 2px;
@@ -52,3 +59,50 @@ a:hover { color: #fff; background-color:#000; }
   list-style: square;
 }
 
+/* END for scaffold */
+
+#notice {
+  background-color: #A3D39C;
+  border: #005E20 solid 1px;
+  padding: 10px 5px 10px 15px;
+}
+#notice img {
+  margin-right: 10px;
+  float: left;
+}
+
+#error {
+  background-color: #F69679;
+  border: #FF0000 solid 1px;
+  padding: 10px 5px 10px 15px;
+}
+#error img {
+  margin-right: 10px;
+  float: left;
+}
+
+#header {
+  border-bottom: #000000 dotted 1px;
+  padding: 5px 5px 5px 15px;
+  font-size:   30px;
+  line-height: 40px;
+}
+#header a a:hover a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+#content {
+  min-height: 300px;
+  margin-top: 20px;
+}
+
+#search_form {
+  text-align: center;
+}
+
+#footer {
+  border-top: #000000 dotted 1px;
+  padding: 5px 5px 5px 15px;
+  margin-top: 20px;
+}

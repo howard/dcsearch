@@ -4,15 +4,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <%= stylesheet_link_tag "default" %>
   <title>Direct Connect Search</title>
-  <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
+  
+  <%= render :partial => "layouts/header" %>
+  
+  <% if flash[:error] %>
+    <p id="error"><%= image_tag 'bad.png' %><%= flash[:error] %></p>
+  <% end %>
+  <% if flash[:notice] %>
+    <p id="notice"><%= image_tag 'good.png' %><%= flash[:notice] %></p>
+  <% end %>
+  
+  <div id="content">
+    <%= yield  %>
+  </div>
 
-<p id="error">Test<%= flash[:error] %></p>
-<p id="notice">Test<%= flash[:notice] %></p>
-
-<%= yield  %>
+  <%= render :partial => "layouts/footer" %>
 
 </body>
 </html>

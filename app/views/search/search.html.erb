@@ -1,2 +1,15 @@
-<h1>Search#search</h1>
-<p>Find me in app/views/search/search.html.erb</p>
+<div id="search_form">
+  <% form_remote_tag :html => {:controller => 'search', :action => 'results'}, :update => 'results', :url => {:action => 'results'}, :complete => visual_effect(:fade, 'results', :duration => 0.2, :from => 0, :to => 1) do %>
+  	<%= text_field :query, :term, :size => 50 %>
+  	<%= submit_tag "Search..." %><br />
+  	<%= check_box :query, "sposts", :checked => true %>
+  	  <%= label :query, :files?, "Files" %>
+  	<%= check_box :query, "susers", :checked => false, :disabled => true %>
+  	  <%= label :query, :folders?, "Folders" %>
+  	<%= check_box :query, "spastes", :checked => false, :disabled => true %>
+  	  <%= label :query, :users?, "Users" %>
+  <% end %>
+</div>
+
+<div id="results">
+</div>

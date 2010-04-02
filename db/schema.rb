@@ -9,11 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100331101730) do
+ActiveRecord::Schema.define(:version => 20100402160943) do
 
   create_table "fileentries", :force => true do |t|
     t.string  "name"
-    t.string  "hash"
+    t.string  "hashCode"
     t.integer "folderId"
     t.integer "userId"
     t.integer "fileSize"

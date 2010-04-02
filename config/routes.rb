@@ -1,5 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'search', :action => 'search'
+  map.connect 'search', :controller => 'search', :action => 'search'
+  map.connect 'results', :controller => 'search', :action => 'results'
   
   map.resources :fileentries
 
