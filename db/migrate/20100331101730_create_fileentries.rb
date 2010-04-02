@@ -1,13 +1,11 @@
 class CreateFileentries < ActiveRecord::Migration
   def self.up
     create_table :fileentries do |t|
-      t.varchar(200) :name
-      t.varchar(40) :hash
-      t.bigint(20) :folderId
-      t.bigint(20) :userId
-      t.bigint(20) :fileSize
-
-      t.timestamps
+      t.string :name, :length => 200
+      t.string :hash, :length => 40
+      t.integer :folderId, :length => 20
+      t.integer :userId, :length => 20
+      t.integer :fileSize, :length => 20
     end
   end
 

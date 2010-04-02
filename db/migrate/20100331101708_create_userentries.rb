@@ -1,12 +1,10 @@
 class CreateUserentries < ActiveRecord::Migration
   def self.up
     create_table :userentries do |t|
-      t.varchar(40) :cid
+      t.string :cid, :length => 40
       t.time :lastScan
-      t.varchar(50) :hub
-      t.varchar(45) :name
-
-      t.timestamps
+      t.string :hub, :length => 50
+      t.string :name, :length => 45
     end
   end
 
