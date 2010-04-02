@@ -82,4 +82,13 @@ class UserentriesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  
+  def browse
+    # File browser for a user's files
+    @path = '/' + params['path']
+    @folder = Folderentry.all(:conditions => {:fullName => @path, :parentId => 0, :userId => Userentry.find_by_name(params['user'])})[0]
+    @sub_folders = Folderentry.all(:conditions => {:parentId => @folder})
+    @files = Fileentry.all(:conditions => {:folderId => @folder})
+  end
 end

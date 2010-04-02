@@ -1,8 +1,7 @@
 body {
   background-color: #fff;
   color: #333;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0px 100px 0px 100px;
 }
 
 highlight {
@@ -94,7 +93,7 @@ a:hover { color: #000;}
 }
 
 #content {
-  min-height: 300px;
+  min-height: 500px;
   margin-top: 20px;
 }
 

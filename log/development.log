@@ -24215,3 +24215,650 @@ Rendering search/search
 Rendered layouts/_header (1.2ms)
 Rendered layouts/_footer (0.6ms)
 Completed in 100ms (View: 98, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 00:05:38) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"test", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (20.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (21.1ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mFileentry Load (15.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (fileentries.id in ('507760','507761','507740','507763','507741','507753','507743','507755','507744','507758')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mUserentry Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.2ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (21.3ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 381ms (View: 35, DB: 59) | 200 OK [http://localhost/results?query%5Bterm%5D=test&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:08:24) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 20ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#usage (for 127.0.0.1 at 2010-04-03 00:08:26) [GET]
+Rendering template within layouts/default
+Rendering help/usage
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 61ms (View: 60, DB: 0) | 200 OK [http://localhost/help/usage]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#usage (for 127.0.0.1 at 2010-04-03 00:09:05) [GET]
+Rendering template within layouts/default
+Rendering help/usage
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/help/usage]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:09:06) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:09:28) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 00:10:19) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"foo", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (40.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (27.9ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mFileentry Load (0.4ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (fileentries.id in ('509088','509089','509090','509094','509083','509095','509084','509096','509085','509087')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mUserentry Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.3ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (16.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 211ms (View: 18, DB: 70) | 200 OK [http://localhost/results?query%5Bterm%5D=foo&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 00:10:28) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+Redirected to http://localhost:3000/
+Completed in 57ms (DB: 2) | 302 Found [http://localhost/results?query%5Bterm%5D=&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:10:28) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 00:10:31) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"a", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (13.3ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+Redirected to http://localhost:3000/
+Completed in 24ms (DB: 14) | 302 Found [http://localhost/results?query%5Bterm%5D=a&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:10:31) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-03 00:10:35) [GET]
+  Parameters: {"commit"=>"Search...", "query"=>{"files"=>"1", "term"=>"aa", "users"=>"0", "folders"=>"0"}}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileentry Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mFileentry Load (0.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (fileentries.id in ('542103','534462')) [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mUserentry Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.5ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 15) [0m
+Rendered search/_results (12.2ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 113ms (View: 13, DB: 4) | 200 OK [http://localhost/results?query%5Bterm%5D=aa&commit=Search...&query%5Bfiles%5D=0&query%5Bfiles%5D=1&query%5Bfolders%5D=0&query%5Busers%5D=0]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:10:42) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:17:21) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-03 00:21:12) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;36;1mFileentry Load (423.0ms)[0m   [0;1mSELECT * FROM `fileentries` [0m
+  [4;35;1mFolderentry Load (290.0ms)[0m   [0mSELECT * FROM `folderentries` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `fileentries` [0m
+  [4;35;1mFileentry Columns (30.0ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 25706ms (View: 24962, DB: 743) | 200 OK [http://localhost/help/stats]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:21:47) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 41ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:23:20) [GET]
+Rendering template within layouts/default
+Rendering search/search
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x1069bfcd8>) on line #6 of app/views/search/search.html.erb:
+3: </div>
+4: 
+5: <div id="search_form">
+6:   <% form_for  :url => '/results', :html => {:method => :get} do |q| %>
+7:   	<%= q.text_field :term, :size => 50 %>
+8:   	<%= submit_tag "Search..." %><br />
+9:   	<%= q.check_box :files?, :checked => true %>
+
+    app/views/search/search.html.erb:6
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (1476.3ms)
+Rendered rescues/_request_and_response (16.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:25:31) [GET]
+Rendering template within layouts/default
+Rendering search/search
+
+ActionView::TemplateError (undefined method `merge' for true:TrueClass) on line #9 of app/views/search/search.html.erb:
+6:   <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
+7:   	<%= q.text_field :term, :size => 50 %>
+8:   	<%= submit_tag "Search..." %><br />
+9:   	<%= q.radio_button :mode, :files, true %>
+10:   	  <%= q.label :mode, "Files" %>
+11:   	<%= q.radio_button :mode, :folders, false %>
+12:   	  <%= q.label :mode, "Folders" %>
+
+    app/views/search/search.html.erb:9
+    app/views/search/search.html.erb:6
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:25:55) [GET]
+Rendering template within layouts/default
+Rendering search/search
+
+ActionView::TemplateError (undefined method `radio_button_tag' for #<ActionView::Helpers::FormBuilder:0x10cdff360>) on line #9 of app/views/search/search.html.erb:
+6:   <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
+7:   	<%= q.text_field :term, :size => 50 %>
+8:   	<%= submit_tag "Search..." %><br />
+9:   	<%= q.radio_button_tag :mode, :files, true %>
+10:   	  <%= q.label :mode, "Files" %>
+11:   	<%= q.radio_button :mode, :folders, false %>
+12:   	  <%= q.label :mode, "Folders" %>
+
+    app/views/search/search.html.erb:9
+    app/views/search/search.html.erb:6
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:26:05) [GET]
+Rendering template within layouts/default
+Rendering search/search
+
+ActionView::TemplateError (undefined method `merge' for true:TrueClass) on line #9 of app/views/search/search.html.erb:
+6:   <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
+7:   	<%= q.text_field :term, :size => 50 %>
+8:   	<%= submit_tag "Search..." %><br />
+9:   	<%= q.radio_button :mode, :files, true %>
+10:   	  <%= q.label :mode, "Files" %>
+11:   	<%= q.radio_button :mode, :folders, false %>
+12:   	  <%= q.label :mode, "Folders" %>
+
+    app/views/search/search.html.erb:9
+    app/views/search/search.html.erb:6
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (148.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:26:42) [GET]
+Rendering template within layouts/default
+Rendering search/search
+
+ActionView::TemplateError (undefined method `merge' for true:TrueClass) on line #9 of app/views/search/search.html.erb:
+6:   <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
+7:   	<%= q.text_field :term, :size => 50 %>
+8:   	<%= submit_tag "Search..." %><br />
+9:   	<%= q.radio_button :mode, 'files', true %>
+10:   	  <%= q.label :mode, "Files" %>
+11:   	<%= q.radio_button :mode, 'folders', false %>
+12:   	  <%= q.label :mode, "Folders" %>
+
+    app/views/search/search.html.erb:9
+    app/views/search/search.html.erb:6
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:26:50) [GET]
+Rendering template within layouts/default
+Rendering search/search
+
+ActionView::TemplateError (undefined method `merge' for true:TrueClass) on line #9 of app/views/search/search.html.erb:
+6:   <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
+7:   	<%= q.text_field :term, :size => 50 %>
+8:   	<%= submit_tag "Search..." %><br />
+9:   	<%= q.radio_button :modus, 'files', true %>
+10:   	  <%= q.label :mode, "Files" %>
+11:   	<%= q.radio_button :mode, 'folders', false %>
+12:   	  <%= q.label :mode, "Folders" %>
+
+    app/views/search/search.html.erb:9
+    app/views/search/search.html.erb:6
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (142.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-03 00:27:28) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:31:32) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+
+NameError (undefined local variable or method `param' for #<UserentriesController:0x10ca7c940>):
+  app/controllers/userentries_controller.rb:89:in `browse'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (179.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:31:49) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+
+TypeError (can't convert nil into String):
+  app/controllers/userentries_controller.rb:89:in `browse'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:32:12) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+Completed in 129ms (View: 128, DB: 0) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:34:26) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:35:06) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:35:57) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:36:09) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:36:25) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:40:06) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+
+NameError (uninitialized constant UserentriesController::User):
+  app/controllers/userentries_controller.rb:90:in `browse'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:40:20) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+  [4;36;1mUserentry Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (1.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`name` = 'hugo') LIMIT 1[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Folderentry without an ID):
+  app/controllers/userentries_controller.rb:90:in `browse'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:41:10) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+  [4;36;1mUserentry Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (1.1ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`name` = 'hugo') LIMIT 1[0m
+  [4;36;1mFolderentry Load (40.1ms)[0m   [0;1mSELECT * FROM `folderentries` WHERE (`folderentries`.`userId` IS NULL AND `folderentries`.`fullName` = '/foo' AND `folderentries`.`parentId` = 0) [0m
+  [4;35;1mFolderentry Load (9.0ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`parentId` IN (NULL)) [0m
+  [4;36;1mFileentry Load (221.0ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`folderId` IN (NULL)) [0m
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 298ms (View: 4, DB: 273) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:41:19) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+  [4;35;1mUserentry Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (31.4ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`name` = 'hugo') LIMIT 1[0m
+  [4;35;1mFolderentry Load (67.4ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`userId` IS NULL AND `folderentries`.`fullName` = '/foo' AND `folderentries`.`parentId` = 0) [0m
+  [4;36;1mFolderentry Load (9.7ms)[0m   [0;1mSELECT * FROM `folderentries` WHERE (`folderentries`.`parentId` IS NULL) [0m
+  [4;35;1mFileentry Load (142.1ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`folderId` IS NULL) [0m
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 373ms (View: 3, DB: 252) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:45:53) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+  [4;36;1mUserentry Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (1.1ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`name` = 'hugo') LIMIT 1[0m
+  [4;36;1mFolderentry Load (13.1ms)[0m   [0;1mSELECT * FROM `folderentries` WHERE (`folderentries`.`userId` IS NULL AND `folderentries`.`fullName` = '/foo' AND `folderentries`.`parentId` = 0) [0m
+  [4;35;1mFolderentry Load (8.8ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`parentId` IS NULL) [0m
+  [4;36;1mFileentry Load (138.4ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`folderId` IS NULL) [0m
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 190ms (View: 6, DB: 163) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:45:54) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+  [4;35;1mUserentry Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (1.2ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`name` = 'hugo') LIMIT 1[0m
+  [4;35;1mFolderentry Load (13.9ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`userId` IS NULL AND `folderentries`.`fullName` = '/foo' AND `folderentries`.`parentId` = 0) [0m
+  [4;36;1mFolderentry Load (8.5ms)[0m   [0;1mSELECT * FROM `folderentries` WHERE (`folderentries`.`parentId` IS NULL) [0m
+  [4;35;1mFileentry Load (150.4ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`folderId` IS NULL) [0m
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 200ms (View: 3, DB: 176) | 200 OK [http://localhost/browse/hugo/foo]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserentriesController#browse (for 127.0.0.1 at 2010-04-03 00:45:56) [GET]
+  Parameters: {"path"=>"foo", "user"=>"hugo"}
+  [4;36;1mUserentry Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (1.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`name` = 'hugo') LIMIT 1[0m
+  [4;36;1mFolderentry Load (13.6ms)[0m   [0;1mSELECT * FROM `folderentries` WHERE (`folderentries`.`userId` IS NULL AND `folderentries`.`fullName` = '/foo' AND `folderentries`.`parentId` = 0) [0m
+  [4;35;1mFolderentry Load (8.5ms)[0m   [0mSELECT * FROM `folderentries` WHERE (`folderentries`.`parentId` IS NULL) [0m
+  [4;36;1mFileentry Load (140.2ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`folderId` IS NULL) [0m
+Rendering template within layouts/default
+Rendering userentries/browse
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 280ms (View: 3, DB: 165) | 200 OK [http://localhost/browse/hugo/foo]

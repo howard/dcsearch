@@ -1,0 +1,19 @@
+<div id="browser">
+  <div id="path">
+    <%= params['user'] + ' ' + @path %>
+  </div>
+  <div id="listing">
+    <ul>
+      <% for folder in @sub_folders do %>
+        <li>
+          <a href="/browse/<%= params['user'] + folder.fullName %>"><%= folder.shortName %></a>
+        </li>
+      <% end %>
+      <% for file in @files do %>
+        <li>
+          <%= magnet file file.name%>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
