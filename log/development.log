@@ -21694,3 +21694,897 @@ Rendered search/_results (13.9ms)
 Rendered layouts/_header (0.1ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 98ms (View: 15, DB: 7) | 200 OK [http://localhost/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:01:32) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.6ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mFileentry Columns (21.7ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mUserentry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.5ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mUserentry Load (0.4ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (34.1ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 50ms (View: 16, DB: 28) | 200 OK [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:02:23) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mUserentry Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (12.8ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 25ms (View: 11, DB: 7) | 200 OK [http://localhost/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:02:36) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.7ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mFileentry Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mUserentry Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.2ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mUserentry Load (0.3ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (13.9ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 92ms (View: 78, DB: 7) | 200 OK [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:02:53) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mUserentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mUserentry Load (0.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (12.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 24ms (View: 11, DB: 7) | 200 OK [http://localhost/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:03:03) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.6ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mFileentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mUserentry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.3ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mUserentry Load (0.2ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (12.2ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 24ms (View: 11, DB: 7) | 200 OK [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:03:19) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mUserentry Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (13.1ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 25ms (View: 12, DB: 7) | 200 OK [http://localhost/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:05:49) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.6ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mFileentry Columns (22.2ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mUserentry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.5ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mUserentry Load (0.3ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (34.8ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 50ms (View: 16, DB: 28) | 200 OK [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:06:44) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mUserentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mUserentry Load (0.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (14.2ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 29ms (View: 16, DB: 7) | 200 OK [http://localhost/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:07:15) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.6ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mFileentry Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mUserentry Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.5ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mUserentry Load (0.3ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (13.0ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 25ms (View: 11, DB: 7) | 200 OK [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 20:09:33) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Fri Apr 02 20:27:53 +0200 2010
+  Status: 500 Internal Server Error
+  /Users/mrc/Development/dcsearch/app/helpers/application_helper.rb:40: syntax error, unexpected $end, expecting kEND
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:197:in `default_helper_module!'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:212:in `__send__'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:212:in `inherited'
+    /Users/mrc/Development/dcsearch/app/controllers/application_controller.rb:4
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:28:26) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (23.9ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mUserentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (46.9ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 94ms (View: 45, DB: 29) | 200 OK [http://localhost/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:29:25) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.7ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mFileentry Columns (17.8ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mUserentry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.3ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mUserentry Load (0.2ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (28.6ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 49ms (View: 19, DB: 23) | 200 OK [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:30:00) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.7ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (14.4ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mUserentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (26.2ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 143ms (View: 13, DB: 20) | 200 OK [http://localhost/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:30:39) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.7ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mFileentry Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mUserentry Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.3ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mUserentry Load (0.2ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (12.5ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 24ms (View: 11, DB: 7) | 200 OK [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-02 20:33:35) [GET]
+
+ActionController::RoutingError (No route matches "/help/stats" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-02 20:33:41) [GET]
+
+ActionController::RoutingError (No route matches "/help" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#index (for 127.0.0.1 at 2010-04-02 20:34:44) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: about, stats, and usage):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-02 20:34:51) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;36;1mFileentry Load (9.4ms)[0m   [0;1mSELECT * FROM `fileentries` [0m
+  [4;35;1mFolderentry Columns (31.8ms)[0m   [0mSHOW FIELDS FROM `folderentries`[0m
+  [4;36;1mFolderentry Load (0.3ms)[0m   [0;1mSELECT * FROM `folderentries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFileentry Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+
+ActionView::TemplateError (undefined method `+' for #<Fileentry:0x10425dc08>) on line #4 of app/views/help/stats.html.erb:
+1: <div id="stats">
+2:   The index contains <highlight><%= Fileentry.all().length %></highlight> files
+3:   in <highlight><%= Folderentry.all().length %></highlight> folders.<br />
+4:   <highlight><%= human_filesize Fileentry.all().sum %></highlight> are at your hands!
+5: </div>
+
+    app/views/help/stats.html.erb:4
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-02 20:37:38) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;35;1mFileentry Load (38.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFolderentry Load (0.3ms)[0m   [0;1mSELECT * FROM `folderentries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFileentry Columns (27.3ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 258ms (View: 191, DB: 66) | 200 OK [http://localhost/help/stats]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-02 20:38:00) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;35;1mFileentry Load (10.2ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFolderentry Load (0.3ms)[0m   [0;1mSELECT * FROM `folderentries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFileentry Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 211ms (View: 197, DB: 12) | 200 OK [http://localhost/help/stats]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-02 20:38:42) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;35;1mFileentry Load (8.8ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFolderentry Load (0.3ms)[0m   [0;1mSELECT * FROM `folderentries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFileentry Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 194ms (View: 182, DB: 11) | 200 OK [http://localhost/help/stats]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-02 20:43:31) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;35;1mFileentry Load (32.4ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFolderentry Load (0.3ms)[0m   [0;1mSELECT * FROM `folderentries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFileentry Columns (24.4ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 242ms (View: 184, DB: 58) | 200 OK [http://localhost/help/stats]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-02 20:44:29) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;35;1mFileentry Load (10.2ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFolderentry Load (0.5ms)[0m   [0;1mSELECT * FROM `folderentries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFileentry Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 199ms (View: 185, DB: 13) | 200 OK [http://localhost/help/stats]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HelpController#stats (for 127.0.0.1 at 2010-04-02 20:44:48) [GET]
+Rendering template within layouts/default
+Rendering help/stats
+  [4;35;1mFileentry Load (8.9ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFolderentry Load (0.3ms)[0m   [0;1mSELECT * FROM `folderentries` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `fileentries` [0m
+  [4;36;1mFileentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 204ms (View: 192, DB: 11) | 200 OK [http://localhost/help/stats]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 20:44:50) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:44:52) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.7ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund') [0m
+Rendering template within layouts/default
+Rendering search/results
+Rendered search/_results (0.1ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 158ms (View: 3, DB: 4) | 200 OK [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:44:58) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (18.0ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mUserentry Columns (10.2ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (5.6ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (69.9ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 83ms (View: 38, DB: 38) | 200 OK [http://localhost/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 20:48:15) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 44ms (View: 41, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:48:16) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.8ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = '') [0m
+Rendering template within layouts/default
+Rendering search/results
+Rendered search/_results (0.8ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 113ms (View: 6, DB: 4) | 200 OK [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:48:21) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"foo", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'foo') [0m
+Rendering template within layouts/default
+Rendering search/results
+Rendered search/_results (0.1ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 2, DB: 4) | 200 OK [http://localhost/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 20:48:33) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"foo", "susers"=>"0"}}
+  [4;35;1mFileentry Load (4.0ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'foo') [0m
+Redirected to http://localhost:3000/
+Completed in 11ms (DB: 4) | 302 Found [http://localhost/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 20:48:33) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 127.0.0.1 at 2010-04-02 20:52:37) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 91.114.177.223 at 2010-04-02 20:53:45) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 236ms (View: 234, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 91.114.177.223 at 2010-04-02 20:53:48) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 193.170.134.123 at 2010-04-02 20:54:08) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 193.170.134.123 at 2010-04-02 20:54:18) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"Oeg3rixfsJwjGVOZ02w7iL2Nn56uFlnGqrlJCT7ShtQ=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Redirected to http://91.114.177.223/
+Completed in 23ms (DB: 4) | 302 Found [http://91.114.177.223/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 193.170.134.123 at 2010-04-02 20:54:18) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 91.114.177.223 at 2010-04-02 20:54:19) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"EmjHNeDJvIG0cg59+z4vEl0Z+xITSaWIql1kDOO/4K8=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.7ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Redirected to http://91.114.177.223/
+Completed in 10ms (DB: 4) | 302 Found [http://91.114.177.223/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 91.114.177.223 at 2010-04-02 20:54:19) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 91.114.177.223 at 2010-04-02 20:54:25) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"EmjHNeDJvIG0cg59+z4vEl0Z+xITSaWIql1kDOO/4K8=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Redirected to http://91.114.177.223/
+Completed in 10ms (DB: 4) | 302 Found [http://91.114.177.223/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 91.114.177.223 at 2010-04-02 20:54:25) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 91.114.177.223 at 2010-04-02 20:54:28) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"EmjHNeDJvIG0cg59+z4vEl0Z+xITSaWIql1kDOO/4K8=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.6ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund') [0m
+Redirected to http://91.114.177.223/
+Completed in 10ms (DB: 4) | 302 Found [http://91.114.177.223/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 91.114.177.223 at 2010-04-02 20:54:28) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 193.170.134.123 at 2010-04-02 20:54:28) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"Oeg3rixfsJwjGVOZ02w7iL2Nn56uFlnGqrlJCT7ShtQ=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Redirected to http://91.114.177.223/
+Completed in 10ms (DB: 4) | 302 Found [http://91.114.177.223/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 193.170.134.123 at 2010-04-02 20:54:32) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 193.170.134.123 at 2010-04-02 20:54:43) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"Oeg3rixfsJwjGVOZ02w7iL2Nn56uFlnGqrlJCT7ShtQ=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.6ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Redirected to http://91.114.177.223/
+Completed in 73ms (DB: 4) | 302 Found [http://91.114.177.223/results]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 193.170.134.123 at 2010-04-02 20:54:45) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#search (for 91.114.177.223 at 2010-04-02 20:54:53) [GET]
+Rendering template within layouts/default
+Rendering search/search
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://91.114.177.223/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 91.114.177.223 at 2010-04-02 20:54:56) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"EmjHNeDJvIG0cg59+z4vEl0Z+xITSaWIql1kDOO/4K8=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (25.3ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mUserentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.3ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mUserentry Load (0.2ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (35.7ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 47ms (View: 11, DB: 31) | 200 OK [http://91.114.177.223/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'latin1'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 193.170.134.123 at 2010-04-02 20:55:13) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"Oeg3rixfsJwjGVOZ02w7iL2Nn56uFlnGqrlJCT7ShtQ=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;35;1mFileentry Load (3.5ms)[0m   [0mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;36;1mFileentry Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `fileentries`[0m
+  [4;35;1mUserentry Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `userentries`[0m
+  [4;36;1mUserentry Load (0.5ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mUserentry Load (0.2ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (12.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 24ms (View: 11, DB: 7) | 200 OK [http://91.114.177.223/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 21:13:24) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (20.9ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+
+ActionView::TemplateError (undefined method `size' for #<Fileentry:0x104597e28>) on line #4 of app/views/search/_results.html.erb:
+1: <ul class="results">
+2:   <% for item in @file_results do %>
+3:     <li class="result">
+4:       <%= magnet item, image_tag('download.png') %>
+5:       /path/will/be/here/<%= item.name %><br />
+6:       <% user = Userentry.find(item.userId) %>
+7:       User: <%= user.name %>
+
+    app/helpers/application_helper.rb:6:in `magnet'
+    app/views/search/_results.html.erb:4
+    app/views/search/_results.html.erb:2:in `each'
+    app/views/search/_results.html.erb:2
+    app/views/search/results.html.erb:1
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 21:13:36) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.6ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #4 of app/views/search/_results.html.erb:
+1: <ul class="results">
+2:   <% for item in @file_results do %>
+3:     <li class="result">
+4:       <%= magnet item, image_tag('download.png') %>
+5:       /path/will/be/here/<%= item.name %><br />
+6:       <% user = Userentry.find(item.userId) %>
+7:       User: <%= user.name %>
+
+    app/helpers/application_helper.rb:6:in `magnet'
+    app/views/search/_results.html.erb:4
+    app/views/search/_results.html.erb:2:in `each'
+    app/views/search/_results.html.erb:2
+    app/views/search/results.html.erb:1
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'latin1'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchController#results (for 127.0.0.1 at 2010-04-02 21:13:44) [POST]
+  Parameters: {"commit"=>"Search...", "authenticity_token"=>"kWyrY2ftCx5yFuMMOwWuGGjR1H4Nc8zXrYAz57WTDoA=", "query"=>{"sposts"=>"1", "spastes"=>"0", "term"=>"bund.zip", "susers"=>"0"}}
+  [4;36;1mFileentry Load (3.7ms)[0m   [0;1mSELECT * FROM `fileentries` WHERE (`fileentries`.`name` = 'bund.zip') [0m
+Rendering template within layouts/default
+Rendering search/results
+  [4;35;1mFileentry Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `fileentries`[0m
+  [4;36;1mUserentry Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `userentries`[0m
+  [4;35;1mUserentry Load (0.5ms)[0m   [0mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 12) [0m
+  [4;36;1mUserentry Load (0.3ms)[0m   [0;1mSELECT * FROM `userentries` WHERE (`userentries`.`id` = 14) [0m
+Rendered search/_results (64.8ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 77ms (View: 64, DB: 7) | 200 OK [http://localhost/results]

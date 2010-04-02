@@ -5,6 +5,11 @@ body {
   margin-right: 100px;
 }
 
+highlight {
+  color: #666666;
+  font-style: bold;
+}
+
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
@@ -105,4 +110,14 @@ a:hover { color: #fff; background-color:#000; }
   border-top: #000000 dotted 1px;
   padding: 5px 5px 5px 15px;
   margin-top: 20px;
+}
+
+.results {
+  list-style: none;
+  display: block;
+  padding: 20px;
+}
+
+.result {
+  margin-bottom: 20px;
 }

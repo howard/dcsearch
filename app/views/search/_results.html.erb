@@ -1,12 +1,12 @@
-<ul>
-  Search results:
+<ul class="results">
   <% for item in @file_results do %>
-    <li>
-      <%= magnet item, image_tag('download.png') %><br />
+    <li class="result">
+      <%= magnet item, image_tag('download.png') %>
+      /path/will/be/here/<%= item.name %><br />
       <% user = Userentry.find(item.userId) %>
       User: <%= user.name %>
       Hub: <%= user.hub %>
-      Filesize: <%= item.fileSize %>
+      Filesize: <%= human_filesize item.fileSize %>
     </li>
   <% end %>
 </ul>

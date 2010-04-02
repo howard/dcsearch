@@ -5,7 +5,13 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <%= stylesheet_link_tag "default" %>
-  <title>Direct Connect Search</title>
+  <title>Direct Connect Search - 
+    <%= if @title
+          @title
+        else
+          controller.action_name.capitalize
+        end %>
+  </title>
 </head>
 <body>
   

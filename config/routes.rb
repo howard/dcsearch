@@ -3,6 +3,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'search', :controller => 'search', :action => 'search'
   map.connect 'results', :controller => 'search', :action => 'results'
   
+  map.connect 'help/:action', :controller => 'help'
+  
   map.resources :fileentries
 
   map.resources :folderentries
