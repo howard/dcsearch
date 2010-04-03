@@ -1,12 +1,12 @@
 <div id="slim_search_form">
   <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
-  	<%= q.text_field :term, :size => 50 %>
-  	<%= q.check_box :files?, :checked => true %>
-  	  <%= q.label :files?, "Files" %>
-  	<%= q.check_box :folders?, :checked => false %>
-  	  <%= q.label :folders?, "Folders" %>
-  	<%= q.check_box :users?, :checked => false %>
-  	  <%= q.label :users?, "Users" %>
-  	<%= submit_tag "Search..." %>
+  	<%= q.text_field :term, :size => 50, :value => @prev_term %>
+  	<%= submit_tag "Search..." %><br />
+  	<%= radio_button_tag :mode, :files, true %>
+  	  <%= q.label :files, "Files" %>
+  	<%= radio_button_tag :mode, :folders, false %>
+  	  <%= q.label :folders, "Folders" %>
+  	<%= radio_button_tag :mode, :users, false %>
+  	  <%= q.label :users, "Users" %>
   <% end %>
 </div>

@@ -102,6 +102,9 @@ img {display: inline-block;}
 #search_form {
   text-align: center;
 }
+#slim_search_form {
+  margin: 10px;
+}
 
 .logo {
   border: none;
