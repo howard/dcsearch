@@ -144,3 +144,8 @@ img {display: inline-block;}
   padding: 5px;
   margin: 0px;
 }
+#folder_info {
+  margin: 0px;
+  padding: 3px;
+  border-top: #C2C2C2 solid 1px;
+}
