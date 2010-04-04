@@ -7,5 +7,5 @@
       for file in Fileentry.all() do
         filesize_sum += file.fileSize
       end %>
-  <highlight><%= human_filesize filesize_sum %></highlight> are at your hands!
+  <highlight><%= number_to_human_size filesize_sum %></highlight> of data are at your hands!
 </div>

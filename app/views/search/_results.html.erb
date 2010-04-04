@@ -12,7 +12,7 @@
       <% end %>
       Hub: <%= user.hub %>
       Filesize: <%= number_to_human_size item.fileSize %><br />
-      <%= link_to 'More like this!', :action => 'similar', :likethis => item %>
+      <%= link_to 'More like this!', :action => 'similar', :filename => item.name, :likethis => item %>
     </li>
   <% end %>
   <%= will_paginate @file_results %>

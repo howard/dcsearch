@@ -1,22 +1,22 @@
 class SearchController < ApplicationController
+  PER_PAGE = 15
   
   def search
   end
   
   def similar
-    @file_results = Fileentry.find(params[:likethis]).more_like_this
-    render :view => 'results'
+    @file_results = Fileentry.find(params[:likethis]).more_like_this :field_names => [:name, :folderId, :userId], :page => params[:page], :per_page => PER_PAGE
   end
 
   def results
-    if not params[:query]
+    if not params[:term]
 	    flash[:error] = "No search terms specified!"
 	    redirect_to :controller => 'search'
 	  else
-	    term = term_parser params[:query][:term]
+	    term = term_parser params[:term]
       @prev_term = term
       @search_time = Time.now
-	    @file_results = Fileentry.find_with_ferret params[:query][:term], :page => params[:page], :per_page => 15
+	    @file_results = Fileentry.find_with_ferret params[:term], :page => params[:page], :per_page => PER_PAGE
 	    #@file_results = Fileentry.find_with_ferret params[:query][:term], :find => :all
 	    #@file_results = group_identical_files @file_results
 	    @search_time = Time.now - @search_time
