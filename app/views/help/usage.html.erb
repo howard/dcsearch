@@ -1,2 +1,78 @@
 <%= link_to '<img src="/images/logo_small.png" style="float:left;">', '/' %>
 <h1 class="headline">How To Use DC Search</h1>
+
+<!-- The following introduction to FQL was adapted from the Ferret documentation:
+  http://www.davebalmain.com/api/classes/Ferret/QueryParser.html -->
+<h2>Search Query Syntax</h2>
+<p>
+The Direct Connect Search query syntax follows the rules of the Ferret Query Language (FQL).<br />
+The following characters are special characters in FQL:
+</p>
+<pre>  :, (, ), [, ], {, }, !, +, ", ~, ^, -, |, &lt;, &gt;, =, *, ?, \
+</pre>
+<p>
+If you want to use one of these characters in one of your terms you need to
+escape it with a \ character. \ escapes itself. The exception to this rule
+is within Phrases which a strings surrounded by double quotes. In Phrases, only
+", | and &lt;&gt; have special meaning and need to be escaped if you
+want the literal value. &lt;&gt; is escaped &lt;\&gt;.
+</p>
+<h3>Phrases</h3>
+<p>
+The query 'test12text' is equivalent to '"test text"'.<br />
+To permit multiple options in a phrase, use the bar ('|') character. For example,
+'"good|average|bad luck"' will match 'good luck' as well as 'bad luck'.<br />
+'&lt;&gt;' is the wildcard word placeholder for phrases. '"we are &lt;&gt; free"
+will match even if there is a word between 'are' and 'free'.<br />
+You can always use '~n' at the end of a phrase, whereas n is an integer
+representing how sloppy the order of the words in the phrase will he handled.
+</p>
+<h3>Attributes</h3>
+<p>
+You can limit your search to items where an attribute matches the conditions you gave.
+An example, adding 'fileSize:123456' to your query will narrow down the results to
+files which are as large as 123456 Bytes. Phrases are valid values for attributes.
+</p>
+<h3>Boolean Terms</h3>
+<p>
+There are a couple of ways of indicating, if a condition in the query has to be met or not:
+</p>
+<ul>
+<li>'+' can be used to indicate a required term.</li>
+<li>'-' or '!' are used to indicate a term that is required to be false.</li>
+<li>all other terms are optional if the above symbols are used.</li>
+</ul>
+<p>
+You may also use the boolean operators "AND",
+"&amp;&amp;", "OR" and "||".
+</p>
+<h3>Range Queries</h3>
+<p>
+A range query finds all documents with terms between the two query terms. Examples:
+</p>
+<pre>  'fileSize:[20050725 20050905]' # all files with sizes &gt;= 20050725 and &lt;= 20050905
+  'fileSize:[20050725 20050905}' # all files with sizes &gt;= 20050725 and &lt;  20050905
+  'fileSize:{20050725 20050905]' # all files with sizes &gt;  20050725 and &lt;= 20050905
+  'fileSize:{20050725 20050905}' # all files with sizes &gt;  20050725 and &lt;  20050905
+</pre>
+<p>
+You can also do open ended queries like this;
+</p>
+<pre>  'date: &gt;= 20050725'
+  'fileSize: &gt;  20050725'
+  'fileSize: &lt;= 20050905'
+  'fileSize: &lt;  20050905'
+</pre>
+
+<h3>Wildcards</h3>
+<p>
+A wild query is a query using the pattern matching characters * and ?. *
+matches 0 or more characters while ? matches a single character.
+</p>
+<h3>Fuzzy Queries</h3>
+<p>
+Similar to appending '~n' to phrases, you can let the search be sloppy with your
+term by appending '~' to it. Optionally, you can adjust the level of sloppiness
+by appending a float between 0 and 1.0, 1.0 being a perfect match and 0 being
+far from a match.
+</p>
