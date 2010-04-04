@@ -2,7 +2,7 @@
   <% for item in @file_results do %>
     <li class="result">
       <%= magnet item, image_tag('download.png') %>
-      /path/will/be/here/<%= item.name %><br />
+      <%= Folderentry.find(item.folderId).fullName %>/<strong><%= item.name %></strong><br />
       <% user = Userentry.find(item.userId) %>
       User:
       <% if user.online %>

@@ -11,6 +11,7 @@ class SearchController < ApplicationController
 	    term = term_parser params[:query][:term]
       @prev_term = term
 	    @file_results = Fileentry.find_with_ferret params[:query][:term], :page => params[:page], :per_page => 20
+	    #@file_results = Fileentry.find_with_ferret params[:query][:term], :find => :all
 	    #@file_results = group_identical_files @file_results
 	    
 	    if @file_results == []
