@@ -8,7 +8,7 @@ class SearchController < ApplicationController
   end
   
   def similar
-    @file_results = Fileentry.find(params[:likethis]).more_like_this :field_names => [:name, :folderId, :userId], :page => params[:page], :per_page => PER_PAGE
+    @file_results = Fileentry.find(params[:likethis]).more_like_this :field_names => [:name], :ar_options => {:page => params[:page], :per_page => PER_PAGE}
   end
 
   def results

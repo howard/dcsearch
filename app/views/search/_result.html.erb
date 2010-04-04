@@ -9,13 +9,14 @@
     <% else %>
       <%= image_tag 'offline.png' %>
     <% end %>
-    <%= link_to user.name, :controller => 'userentries', :action => 'browse', :id => user.id.to_s, :user => user.name, :path => '' %>
-    Hub: <%= user.hub %>
-    Filesize: <%= number_to_human_size object.fileSize %><br />
+    <%= link_to user.name, :controller => 'userentries', :action => 'browse', :id => user.id.to_s, :user => user.name, :path => '' %> |
+    Hub: <%= user.hub %> |
+    Filesize: <%= number_to_human_size object.fileSize %> |
     <%= link_to 'More like this!', :action => 'similar', :filename => object.name, :likethis => object %>
   </li>
 <% elsif object.class == Folderentry %>
   <li class="folder_result">
+    <%= image_tag '/images/folder.png' %>
     <%= link_to object.fullName, :controller => 'userentries', :action => 'browse', :id => object.userId.to_s, :user => Userentry.find(object.userId).name, :path => object.fullName[1..object.fullName.length] %><br />
     <% user = Userentry.find(object.userId) %>
     User:
