@@ -18,24 +18,4 @@ module ApplicationHelper
   #  return link + '">' + linktext + '</a>'
   #end
   
-  def human_filesize bytes
-    # Converts filesize in bytes into human readable format
-    bytes = bytes.to_s
-    while bytes.length > 3 do
-      bytes = bytes[0..bytes.length-4]
-    end
-    unit = case bytes.length
-      when 0 then 'B'
-      when 1 then 'KB'
-      when 2 then 'MB'
-      when 3 then 'GB'
-      when 4 then 'TB'
-      when 5 then 'PB'
-      when 6 then 'EB'
-      when 7 then 'ZB'
-      when 8 then 'YB'
-    end
-    return bytes + ' ' + unit
-  end
-  
 end
