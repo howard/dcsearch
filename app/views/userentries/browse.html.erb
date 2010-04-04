@@ -6,20 +6,20 @@
     <% if @folder.parentId != 0 %>
       <li>
         <%= image_tag 'up.png' %>
-        <%= link_to '..', :id => params[:id], :user => params[:user], :path => Folderentry.find(@folder.parentId).fullName[1..@folder.fullName.length] %>
+        <a href="/browse/<%= params['id'] + '/' + params['user'] + Folderentry.find(@folder.parentId).fullName %>">..</a>
       </li>
     <% end %>
     <% for folder in @sub_folders do %>
       <li>
         <%= image_tag 'folder.png' %>
-        <%= link_to folder.shortName, :id => params[:id], :user => params[:user], :path => folder.fullName[1..folder.fullName.length] %>
+        <a href="/browse/<%= params['id'] + '/' + params['user'] + folder.fullName %>"><%= folder.shortName %></a>
       </li>
     <% end %>
     <% for file in @files do %>
       <li>
         <%= image_tag 'file.png' %>
         <%= magnet file, file.name%>
-        <%= number_to_human_size file.fileSize %>
+        <%= human_filesize file.fileSize %>
       </li>
     <% end %>
   </ul>

@@ -11,8 +11,7 @@
         <%= image_tag 'offline.png' %><a href="/browse/<%= user.id.to_s + '/' + user.name + '">' + user.name %></a>
       <% end %>
       Hub: <%= user.hub %>
-      Filesize: <%= number_to_human_size item.fileSize %><br />
-      <%= link_to 'More like this!', :action => 'similar', :likethis => item %>
+      Filesize: <%= human_filesize item.fileSize %>
     </li>
   <% end %>
   <%= will_paginate @file_results %>

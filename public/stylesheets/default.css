@@ -128,9 +128,6 @@ img {display: inline-block;}
 .result {
   margin-bottom: 20px;
 }
-#search_info {
-  float: right;
-}
 
 #browser {
   border: #C2C2C2 solid 1px;
@@ -151,24 +148,4 @@ img {display: inline-block;}
   margin: 0px;
   padding: 3px;
   border-top: #C2C2C2 solid 1px;
-}
-
-
-.pagination a {
-  padding: 5px 9px 5px 9px;
-  font-weight: none;
-  color: #000000;
-  text-decoration: none;
-  background-color: #E0E0E0;
-  border: #C2C2C2 solid 1px;
-}
-.pagination .disabled {
-  padding: 5px 9px 5px 9px;
-  color: #636363;
-  background-color: ;
-  border: #C2C2C2 solid 1px;
-}
-.pagination .current {
-  padding: 5px 9px 5px 9px;
-  border: #C2C2C2 solid 2px;
 }
