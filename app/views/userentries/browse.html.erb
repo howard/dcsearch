@@ -1,6 +1,9 @@
+<%= link_to '<img src="/images/logo_small.png" style="float:left;">', '/' %>
+<h1 class="headline">Browse <%= params[:user]%>'s Files</h1>
+
 <div id="browser">
   <div id="path">
-    <strong><%= params['user'] %>:</strong> <%= @path %>
+    <strong><%= params[:user] %>:</strong> <%= @path %>
   </div>
   <ul id="listing">
     <% if @folder.parentId != 0 %>

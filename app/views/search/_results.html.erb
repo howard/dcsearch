@@ -1,19 +1,6 @@
 <ul class="results">
   <% for item in @file_results do %>
-    <li class="result">
-      <%= magnet item, image_tag('download.png') %>
-      <%= Folderentry.find(item.folderId).fullName %>/<strong><%= item.name %></strong><br />
-      <% user = Userentry.find(item.userId) %>
-      User:
-      <% if user.online %>
-        <%= image_tag 'online.png' %><a href="/browse/<%= user.id.to_s + '/' + user.name + '">' + user.name %></a>
-      <% else %>
-        <%= image_tag 'offline.png' %><a href="/browse/<%= user.id.to_s + '/' + user.name + '">' + user.name %></a>
-      <% end %>
-      Hub: <%= user.hub %>
-      Filesize: <%= number_to_human_size item.fileSize %><br />
-      <%= link_to 'More like this!', :action => 'similar', :filename => item.name, :likethis => item %>
-    </li>
+    <%= render :partial => "result", :object => item %>
   <% end %>
   <%= will_paginate @file_results %>
 </ul>

@@ -20,10 +20,8 @@ class SearchController < ApplicationController
   	  else
         term = term_parser params[:term]
         @prev_term = term
-  	    @file_results = Fileentry.find_with_ferret params[:term], :page => params[:page], :per_page => PER_PAGE
-  	    #@file_results = Fileentry.find_with_ferret params[:query][:term], :find => :all
-  	    #@file_results = group_identical_files @file_results
-    
+  	    @file_results = ActsAsFerret::find term, [Fileentry, Folderentry, Userentry], {:page => params[:page], :per_page => PER_PAGE}, {}
+        
   	    if @file_results == []
   	      flash[:error] = "No results for this search term!"
   	      redirect_to :action => 'search'
@@ -52,7 +50,6 @@ class SearchController < ApplicationController
         end
         query += parts[k] + ' '
       end
-	    puts "Query: " + query
 	    
 	    @prev_term = query
 	    @file_results = Fileentry.find_with_ferret query, :page => params[:page], :per_page => PER_PAGE

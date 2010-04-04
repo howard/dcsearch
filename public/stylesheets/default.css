@@ -8,6 +8,9 @@ highlight {
   color: #666666;
   font-style: bold;
 }
+pale {
+  color: #636363;
+}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -111,7 +114,8 @@ input {
   text-align: center;
 }
 #slim_search_form {
-  margin: 10px;
+  margin: 0px;
+  padding-top: 18px;
 }
 
 #advanced_search {
@@ -146,7 +150,13 @@ input {
   padding: 20px;
 }
 
-.result {
+.file_result {
+  margin-bottom: 20px;
+}
+.folder_result {
+  margin-bottom: 20px;
+}
+.user_result {
   margin-bottom: 20px;
 }
 #search_info {
