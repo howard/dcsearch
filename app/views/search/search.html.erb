@@ -3,14 +3,5 @@
 </div>
 
 <div id="search_form">
-  <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
-  	<%= text_field_tag :term, @prev_term, :size => 50 %>
-  	<%= submit_tag "Search..." %><br />
-  	<%= radio_button_tag :mode, :files, true %>
-  	  <%= q.label :files, "Files" %>
-  	<%= radio_button_tag :mode, :folders, false %>
-  	  <%= q.label :folders, "Folders" %>
-  	<%= radio_button_tag :mode, :users, false %>
-  	  <%= q.label :users, "Users" %>
-  <% end %>
+  <%= render :partial => "slim" %>
 </div>

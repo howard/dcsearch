@@ -8,5 +8,7 @@
   	  <%= q.label :folders, "Folders" %>
   	<%= radio_button_tag :mode, :users, false %>
   	  <%= q.label :users, "Users" %>
+  	<%= hidden_field_tag :type, 'basic' %>
+    <%= link_to 'Advanced Search', :action => 'advanced' %>
   <% end %>
 </div>

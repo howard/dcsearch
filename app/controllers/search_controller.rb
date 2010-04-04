@@ -4,28 +4,65 @@ class SearchController < ApplicationController
   def search
   end
   
+  def advanced
+  end
+  
   def similar
     @file_results = Fileentry.find(params[:likethis]).more_like_this :field_names => [:name, :folderId, :userId], :page => params[:page], :per_page => PER_PAGE
   end
 
   def results
-    if not params[:term]
-	    flash[:error] = "No search terms specified!"
-	    redirect_to :controller => 'search'
+    @search_time = Time.now
+    if params[:type] == 'basic'
+      if not params[:term]
+  	    flash[:error] = "No search terms specified!"
+  	    redirect_to :controller => 'search'
+  	  else
+        term = term_parser params[:term]
+        @prev_term = term
+  	    @file_results = Fileentry.find_with_ferret params[:term], :page => params[:page], :per_page => PER_PAGE
+  	    #@file_results = Fileentry.find_with_ferret params[:query][:term], :find => :all
+  	    #@file_results = group_identical_files @file_results
+    
+  	    if @file_results == []
+  	      flash[:error] = "No results for this search term!"
+  	      redirect_to :action => 'search'
+  	    end
+  	  end
 	  else
-	    term = term_parser params[:term]
-      @prev_term = term
-      @search_time = Time.now
-	    @file_results = Fileentry.find_with_ferret params[:term], :page => params[:page], :per_page => PER_PAGE
-	    #@file_results = Fileentry.find_with_ferret params[:query][:term], :find => :all
-	    #@file_results = group_identical_files @file_results
-	    @search_time = Time.now - @search_time
+	    parts = {}
+	    
+	    parts[:keywords] = params[:keywords]
+	    user  = Userentry.find_with_ferret(params[:user])
+	    if user != []
+	      parts[:user] = 'userId:' + user[0].id.to_s
+	    end
+	    folder = Folderentry.find_with_ferret(params[:folder])
+	    if folder != []
+	      parts[:folder] = 'folderId:' + folder[0].id.to_s
+	    end
+	    if params[:size] != ''
+	      parts[:size] = 'fileSize:' + params[:size]
+      end
+	    
+	    query = ''
+      parts.each_key do |k|
+        if params[:fuzzy] == '1'
+          parts[k] = parts[k] + '~'
+        end
+        query += parts[k] + ' '
+      end
+	    puts "Query: " + query
+	    
+	    @prev_term = query
+	    @file_results = Fileentry.find_with_ferret query, :page => params[:page], :per_page => PER_PAGE
 	    
 	    if @file_results == []
-	      flash[:error] = "No results for this search term!"
-	      redirect_to :action => 'search'
+	      flash[:error] = "No results for these search terms!"
+	      redirect_to :action => 'advanced'
 	    end
 	  end
+	  @search_time = Time.now - @search_time
   end
 
 

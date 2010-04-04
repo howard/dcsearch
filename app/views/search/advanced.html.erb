@@ -1,0 +1,29 @@
+<%= link_to '<img src="/images/logo_small.png" style="float:left;">', :action => 'search' %>
+<h1 class="headline">Advanced Search</h1>
+<% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
+  <table id="advanced_search">
+    <tr>
+	    <td colspan="2"><%= label_tag :keywords, 'Keywords:' %></td>
+	    <td><%= text_field_tag :keywords, nil, :size => 50 %></td>
+	    <td class="seperator"></td>
+	    <td colspan="2"><%= label_tag :user, 'User:' %></td>
+	    <td><%= text_field_tag :user, nil, :size => 50 %></td>
+	  </tr><tr>
+	    <td colspan="2"><%= label_tag :folder, 'Folder:' %></td>
+	    <td><%= text_field_tag :folder, nil, :size => 50 %></td>
+	    <td class="seperator"></td>
+	    <td colspan="2"><%= label_tag :size, 'Size in Bytes:' %></td>
+	    <td><%= text_field_tag :size, nil, :size => 50 %></td>
+	  </tr><tr>
+	    <td></td><td></td><td></td>
+	    <td class="seperator"></td>
+	    <td><%= label_tag :fuzzy, 'Fuzzy: ' %></td>
+	    <td><%= check_box_tag :fuzzy, '1', false %></td>
+      <td><%= submit_tag "Search..." %></td>
+    </tr>
+	</table>
+	<%= hidden_field_tag :type, 'advanced' %>
+<% end %>
+<p>
+  Check "Fuzzy" to include results close to your search terms, not only exact matches.
+</p>
