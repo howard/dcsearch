@@ -113,9 +113,10 @@ input {
 
 .navigation {
   list-style: none;
-  padding: 0px 0px 4px 16px;
+  padding: 0px 0px 4px 15px;
   border: #636363 solid 1px;
   border-top: none;
+  margin-bottom: 15px;
   background-color: #C2C2C2;
 }
 .navigation li {
@@ -124,7 +125,7 @@ input {
   padding: 5px;
 }
 .navigation li:hover {
-  padding: 5px 4px 5px 4px;
+  padding: 1px 4px 5px 4px;
   background-color: #FFFFFF;
   border: #636363 solid 1px;
   border-bottom: #FFFFFF solid 1px;

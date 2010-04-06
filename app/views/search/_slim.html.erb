@@ -1,7 +1,6 @@
 <div id="slim_search_form">
-  <% form_for :query, :url => '/results', :html => {:method => :get} do |q| %>
+  <% form_for :query, :url => '/search/results', :html => {:method => :get} do |q| %>
   	<%= text_field_tag :term, @prev_term, :size => 50 %>
   	<%= submit_tag "Search..." %>
-  	<%= hidden_field_tag :type, 'basic' %>
   <% end %>
 </div>

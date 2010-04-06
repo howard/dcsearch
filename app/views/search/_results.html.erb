@@ -1,6 +1,6 @@
 <ul class="results">
-  <% for item in @file_results do %>
+  <% for item in @results do %>
     <%= render :partial => "result", :object => item %>
   <% end %>
-  <%= will_paginate @file_results %>
+  <%= will_paginate @results %>
 </ul>

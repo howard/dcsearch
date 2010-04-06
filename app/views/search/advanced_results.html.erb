@@ -1,7 +1,4 @@
-<div id="search_info">
-  <%= @results.total_hits %> results in <%= (@search_time/1000).to_f %>ms.
-</div>
 <%= link_to '<img src="/images/logo_small.png" style="float:left;">', :action => 'search' %>
-<%= render :partial => "slim" %>
+<%= render :partial => "advanced_form" %>
 <div class="push"></div>
 <%= render :partial => "results" %>

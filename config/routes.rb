@@ -1,8 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'search', :action => 'search'
   map.connect 'search', :controller => 'search', :action => 'search'
-  map.connect 'results', :controller => 'search', :action => 'results'
+  map.connect 'search/results', :controller => 'search', :action => 'results'
   map.connect 'advanced', :controller => 'search', :action => 'advanced'
+  map.connect 'advanced/results', :controller => 'search', :action => 'advanced_results'
   map.connect 'similar/to/:likethis/*filename', :controller => 'search', :action => 'similar'
   
   map.connect 'help/:action', :controller => 'help'
